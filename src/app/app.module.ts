@@ -1,12 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+/* Import Noop Animations Module Js */
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+/* Import Hammer Js */
+import * as Hammer from 'hammerjs';
+
+/* Import App Routing Module and Components */
 import { AppRoutingModule,
   routedComponents } from './app.routing';
+
+
 // Import containers
 import {
-  FullLayoutComponent,
 
+  FullLayoutComponent,
 } from './containers';
 
 const APP_CONTAINERS = [
@@ -16,14 +25,14 @@ const APP_CONTAINERS = [
   ...routedComponents.others
 ];
 
-// Import components
+// Import Components
 /* import {
 
-} from './components'; */
+} from './components';
 
 const APP_COMPONENTS = [
 
-];
+];  */
 
 @NgModule({
   declarations: [
@@ -31,8 +40,10 @@ const APP_COMPONENTS = [
     ...APP_CONTAINERS
   ],
   imports: [
+
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [ routedComponents.app ]

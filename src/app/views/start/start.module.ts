@@ -6,16 +6,18 @@ import { CommonModule } from '@angular/common';
 import { StartRoutingModule
 , routedComponents } from './start.routing';
 
-
+import { MaterialsModule } from '../../modules';
 
 @NgModule({
+
+    imports: [
+        CommonModule,
+        StartRoutingModule,
+        MaterialsModule
+    ],
     declarations: [
 
         ...routedComponents.others
-    ],
-    imports: [
-        CommonModule,
-        StartRoutingModule
     ],
     exports: [],
     providers: [],
