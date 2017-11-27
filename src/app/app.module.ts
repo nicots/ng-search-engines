@@ -14,6 +14,15 @@ import { AppRoutingModule,
 /* Import Material design Module */
 import { MaterialsModule } from './modules';
 
+// Import Modules
+const APP_MODULES = [
+
+  BrowserModule,
+  AppRoutingModule,
+  NoopAnimationsModule,
+  MaterialsModule
+];
+
 // Import containers
 import {
 
@@ -26,7 +35,6 @@ const APP_CONTAINERS = [
 
   FullLayoutComponent,
   ExternLayoutComponent,
-
   routedComponents.app,
   ...routedComponents.others
 ];
@@ -48,10 +56,7 @@ const APP_COMPONENTS = [
   ],
   imports: [
 
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    MaterialsModule
+    ...APP_MODULES,
   ],
   providers: [],
   bootstrap: [ routedComponents.app ]

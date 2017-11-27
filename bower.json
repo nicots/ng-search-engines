@@ -1,0 +1,29 @@
+{
+  "name": "ebay engine",
+  "description": "drop listing",
+  "main": "components",
+  "authors": [
+    "prokopis3 <prokopis123@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ebay",
+    "engine",
+    "backdrop",
+    "drop",
+    "shopping",
+    "drop",
+    "listing"
+  ],
+  "homepage": "https://github.com/nicots/ng-search-engines",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wow": "wowjs#^1.1.2"
+  }
+}
