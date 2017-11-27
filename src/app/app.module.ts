@@ -11,16 +11,22 @@ import * as Hammer from 'hammerjs';
 import { AppRoutingModule,
   routedComponents } from './app.routing';
 
+/* Import Material design Module */
+import { MaterialsModule } from './modules';
 
 // Import containers
 import {
 
   FullLayoutComponent,
+  ExternLayoutComponent
+
 } from './containers';
 
 const APP_CONTAINERS = [
 
   FullLayoutComponent,
+  ExternLayoutComponent,
+
   routedComponents.app,
   ...routedComponents.others
 ];
@@ -37,13 +43,15 @@ const APP_COMPONENTS = [
 @NgModule({
   declarations: [
 
-    ...APP_CONTAINERS
+    ...APP_CONTAINERS,
+
   ],
   imports: [
 
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MaterialsModule
   ],
   providers: [],
   bootstrap: [ routedComponents.app ]

@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components';
 
-import { HomeRoutes } from './routes';
+import { HomeRoutes, ExternRoutes } from './routes';
 
 const routes: Routes = [
 
     ...HomeRoutes,
+    ...ExternRoutes,
+
     { path: '**', pathMatch: 'full', component: PageNotFoundComponent }
 ];
 
@@ -17,6 +19,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
+
 export class AppRoutingModule { }
 
 export const routedComponents = {
@@ -24,4 +27,4 @@ export const routedComponents = {
     app: AppComponent,
 
     others: [ PageNotFoundComponent ]
-} ;
+};
