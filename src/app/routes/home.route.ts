@@ -15,5 +15,15 @@ export const HomeRoutes: Routes = [
             loadChildren: './views/start/start.module#StartModule'
         }
       ]
-    }
+    },
+    {
+      path: 'listing',
+      component: FullLayoutComponent,
+      children: [
+        {
+            path: '',
+            loadChildren: './views/listing/listing.module#ListingModule'
+        }
+      ]
+    },
 ];

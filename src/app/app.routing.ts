@@ -23,8 +23,5 @@ export const routedComponents = {
 
     app: AppComponent,
 
-    others: [
-
-      PageNotFoundComponent
-    ]
+    others: [ PageNotFoundComponent ]
 } ;
