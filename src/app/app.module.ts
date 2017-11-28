@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 /* Import Noop Animations Module Js */
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,13 +14,17 @@ import { AppRoutingModule,
 /* Import Material design Module */
 import { MaterialsModule } from './modules';
 
+/* Import MDB Material Design Bootstrap */
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 // Import Modules
 const APP_MODULES = [
 
   BrowserModule,
   AppRoutingModule,
   NoopAnimationsModule,
-  MaterialsModule
+  MaterialsModule,
+  MDBBootstrapModule.forRoot()
 ];
 
 // Import containers
@@ -59,6 +63,7 @@ const APP_COMPONENTS = [
     ...APP_MODULES,
   ],
   providers: [],
+  schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [ routedComponents.app ]
 })
 export class AppModule { }
