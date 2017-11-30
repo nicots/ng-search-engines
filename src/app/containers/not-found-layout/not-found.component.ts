@@ -10,17 +10,26 @@ import { Component } from '@angular/core';
                 <div class="col-md-12">
                     <div class="error-template">
                         <h1>
-                            Oops!</h1>
+                        Oops! You're lost.</h1>
                         <h2>
                             404 Page Not Found</h2>
                         <div class="error-details">
-                            Sorry, an error has occured, Requested page not found!
+                            Sorry, The page you are looking for was not found.!
                         </div>
                         <div class="error-actions">
-                            <a (click)="goHome()" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                                Take Me Home </a>
-                                <a (click)="goContact()" class="btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-envelope"></span> Contact Us </a>
+
+                                <div class="input-prepend input-group">
+                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                    <input id="prependedInput" class="form-control" size="16" type="text"
+                                    placeholder="What are you looking for?">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-info" type="button">Search</button>
+                                    </span>
+                                </div>
+                              <a (click)="goHome()" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+                              Take Me Home </a>
+                              <a (click)="goContact()" class="btn btn-default btn-lg">
+                              <span class="glyphicon glyphicon-envelope"></span> Contact Us </a>
                         </div>
                     </div>
                 </div>
