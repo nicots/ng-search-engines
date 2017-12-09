@@ -1,7 +1,7 @@
 .app-header.navbar {
   position: relative;
   flex-direction: row;
-  height: $navbar-height;
+  height: $navbar-main-height;
   padding: 0;
   margin: 0;
   background-color: $navbar-bg;
@@ -28,8 +28,12 @@
 
   .navbar-toggler {
     min-width: 50px;
-    padding: $navbar-toggler-padding-y 0;
+    padding: $navbar-toggler-pad-y $navbar-toggler-pad-x;
     line-height: 0 !important;
+    font-size: 14px;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    text-transform: uppercase;
+
     &:hover .navbar-toggler-icon {
       background-image: $navbar-toggler-icon-hover;
     }
@@ -55,12 +59,17 @@
       margin: 0 auto;
     }
 
+   
     .nav-link {
       padding-top: 0;
       padding-bottom: 0;
       background: 0;
       border: 0;
-
+      font-size: 14px;
+      color: #fff;
+      font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
       .badge {
         position: absolute;
         top: 50%;
