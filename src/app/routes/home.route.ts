@@ -26,4 +26,14 @@ export const HomeRoutes: Routes = [
         }
       ]
     },
+    {
+      path: 'charts',
+      component: FullLayoutComponent,
+      children: [
+        {
+            path: '',
+            loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
+        }
+      ]
+    },
 ];

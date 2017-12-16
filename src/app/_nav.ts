@@ -1,7 +1,7 @@
 export const navigation = [
     {
       name: 'Dashboard',
-      url: '/dashboard',
+      url: '/',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
@@ -13,10 +13,15 @@ export const navigation = [
       name: 'UI elements'
     },
     {
-      name: 'Components',
-      url: '/components',
+      name: 'Listing',
+      url: '/listing',
       icon: 'icon-puzzle',
       children: [
+        {
+          name: 'Dashlist',
+          icon: 'icon-puzzle',
+          url: '/listing',
+        },
         {
           name: 'Buttons',
           url: '/components/buttons',
@@ -103,27 +108,17 @@ export const navigation = [
     },
     {
       name: 'Pages',
-      url: '/pages',
+      url: '/extern',
       icon: 'icon-star',
       children: [
         {
           name: 'Login',
-          url: '/pages/login',
+          url: '/extern/login',
           icon: 'icon-star'
         },
         {
           name: 'Register',
-          url: '/pages/register',
-          icon: 'icon-star'
-        },
-        {
-          name: 'Error 404',
-          url: '/pages/404',
-          icon: 'icon-star'
-        },
-        {
-          name: 'Error 500',
-          url: '/pages/500',
+          url: '/extern/register',
           icon: 'icon-star'
         }
       ]
