@@ -24,42 +24,42 @@ export const navigation = [
         },
         {
           name: 'Buttons',
-          url: '/components/buttons',
+          url: '/listing/buttons',
           icon: 'icon-puzzle'
         },
         {
           name: 'Social Buttons',
-          url: '/components/social-buttons',
+          url: '/listing/social-buttons',
           icon: 'icon-puzzle'
         },
         {
           name: 'Cards',
-          url: '/components/cards',
+          url: '/listing/cards',
           icon: 'icon-puzzle'
         },
         {
           name: 'Forms',
-          url: '/components/forms',
+          url: '/listing/forms',
           icon: 'icon-puzzle'
         },
         {
           name: 'Modals',
-          url: '/components/modals',
+          url: '/listing/modals',
           icon: 'icon-puzzle'
         },
         {
           name: 'Switches',
-          url: '/components/switches',
+          url: '/listing/switches',
           icon: 'icon-puzzle'
         },
         {
           name: 'Tables',
-          url: '/components/tables',
+          url: '/listing/tables',
           icon: 'icon-puzzle'
         },
         {
           name: 'Tabs',
-          url: '/components/tabs',
+          url: '/listing/tabs',
           icon: 'icon-puzzle'
         }
       ]

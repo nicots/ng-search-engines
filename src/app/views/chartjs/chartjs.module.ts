@@ -11,4 +11,4 @@ import { ChartJSRoutingModule } from './chartjs.routing';
   ],
   declarations: [ ChartJSComponent ]
 })
-export class ChartJSModule { }
+export class ChartJSModule {  }

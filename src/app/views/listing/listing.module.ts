@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 // TODO: Create App.routing
@@ -13,6 +13,7 @@ import { MaterialsModule } from '../../modules';
         FeatureRoutingModule,
     ],
     declarations: [ ...routedComponents ],
-    providers: [/* TODO: Providers go here */]
+    providers: [/* TODO: Providers go here */],
+    schemas: [NO_ERRORS_SCHEMA]
 })
 export class ListingModule { }
