@@ -10,7 +10,12 @@
 
     display: inline-block;
     width: $navbar-brand-width;
-    height: $navbar-height;
+    /* height: $navbar-height; */
+    padding: $navbar-toggler-pad-y;
+    line-height: 0 !important;
+    font-size: 14px;
+    top: -1px;
+    right: 16px;
   }
   .navbar-brand {
     display: inline-block;
@@ -31,7 +36,7 @@
     padding: $navbar-toggler-pad-y $navbar-toggler-pad-x;
     line-height: 0 !important;
     font-size: 14px;
-    top: 1px;
+    top: -1px;
     font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
     text-transform: uppercase;
 

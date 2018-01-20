@@ -7,7 +7,7 @@ import { ChildrenOutletContexts } from '@angular/router/src/router_outlet_contex
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
 import { FormsComponent } from './forms.component';
-// import { ModalsComponent } from './modals.component';
+import { ModalsComponent } from './modals.component';
 import { SocialButtonsComponent } from './social-buttons.component';
 import { SwitchesComponent } from './switches.component';
 import { TablesComponent } from './tables.component';
@@ -42,13 +42,13 @@ const routes: Routes = [
                 title: 'Forms'
               }
             },
-            /* {
+            {
               path: 'modals',
               component: ModalsComponent,
               data: {
                 title: 'Modals'
               }
-            }, */
+            },
             {
               path: 'social-buttons',
               component: SocialButtonsComponent,
@@ -100,7 +100,7 @@ export const routedComponents = [
   ButtonsComponent,
   CardsComponent,
   FormsComponent,
- // ModalsComponent,
+  ModalsComponent,
   SocialButtonsComponent,
   SwitchesComponent,
   TablesComponent
